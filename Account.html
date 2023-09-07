@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section id = "header"> 
+            <a href="index.html"> <img src="img/logo4.png" alt=""> </a>
+            <div>
+                <ul id = "navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                    <div class="dropdown">
+                        <li><a class="active"><i class="far fa-regular fa-user"></i></a></li>
+                        <div class="dropdown-content">
+                            <a href="Account.html">view profile</a>
+                            <a href="#">log out</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+
+        <section id="profile">
+            <h3>MY INFORMATION</h3>
+            <form action="" method="post">
+                <div class="thongtin">
+                    <table>
+                        <tr>
+                            <td><p class="p1">Full name</p></td>
+                            <td><input type="text" name="oten" id="oten" placeholder="ho va ten" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><p class="p1">Date of birth</p></td>
+                            <td><input type="text" name="ons" id="ons" placeholder="ngay sinh" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><p class="p1">Phone number</p></td>
+                            <td><input type="text" name="osdt" id="osdt" placeholder="so dien thoai" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><p class="p1">Gender</p></td>
+                            <td><input type="text" name="ogt" id="ogt" placeholder="gioi tinh" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><p class="p1">Address</p></td>
+                            <td><input type="text" name="odc" id="odc" placeholder="dia chi" readonly></td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" id="openModalLink">Update Information</a>
+                <div class="modal" id="myModal">
+                    <div class="modal-content">
+                        <h4>Update information</h4>
+                        <table>
+                            <tr>
+                                <td><p class="p1">Full name</p></td>
+                                <td><input type="text" name="oten" id="oten" placeholder="ho va ten"></td>
+                            </tr>
+                            <tr>
+                                <td><p class="p1">Date of birth</p></td>
+                                <td><input type="text" name="ons" id="ons" placeholder="ngay sinh"></td>
+                            </tr>
+                            <tr>
+                                <td><p class="p1">Phone number</p></td>
+                                <td><input type="text" name="osdt" id="osdt" placeholder="so dien thoai"></td>
+                            </tr>
+                            <tr>
+                                <td><p class="p1">Gender</p></td>
+                                <td><input type="text" name="ogt" id="ogt" placeholder="gioi tinh"></td>
+                            </tr>
+                            <tr>
+                                <td><p class="p1">Address</p></td>
+                                <td><input type="text" name="odc" id="odc" placeholder="dia chi"></td>
+                            </tr>
+                        </table>
+                        <button type="button" id="closeModalBtn">Update</button>
+                    </div>
+                </div>
+            </form>
+            <script src="script.js"></script>
+        </section>
+    </body>
+
+</html>
