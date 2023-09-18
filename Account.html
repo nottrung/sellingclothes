@@ -24,7 +24,7 @@
                         <li><a class="active"><i class="far fa-regular fa-user"></i></a></li>
                         <div class="dropdown-content">
                             <a href="Account.html">view profile</a>
-                            <a href="#">log out</a>
+                            <a href="login.html">log out</a>
                         </div>
                     </div>
                 </ul>
@@ -59,8 +59,10 @@
                     </table>
                 </div>
                 <a href="#" id="openModalLink">Update Information</a>
+                
                 <div class="modal" id="myModal">
                     <div class="modal-content">
+                        
                         <h4>Update information</h4>
                         <table>
                             <tr>
@@ -88,8 +90,21 @@
                     </div>
                 </div>
             </form>
-            <script src="script.js"></script>
+            <script>
+                // hien thi phan cap nhat thong tin
+                const openModalLink = document.getElementById('openModalLink');
+                const modal = document.getElementById('myModal');
+                const closeModalBtn = document.getElementById('closeModalBtn');
+
+                openModalLink.addEventListener('click', function (e) {
+                    e.preventDefault(); // Ngăn chuyển hướng khi nhấn vào liên kết
+                    modal.style.display = 'block'; // Hiển thị modal
+                });
+
+                closeModalBtn.addEventListener('click', function () {
+                    modal.style.display = 'none'; // Đóng modal
+                });
+            </script>
         </section>
     </body>
-
 </html>

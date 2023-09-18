@@ -1,13 +1,12 @@
-// hien thi phan cap nhat thong tin
-const openModalLink = document.getElementById('openModalLink');
-const modal = document.getElementById('myModal');
-const closeModalBtn = document.getElementById('closeModalBtn');
+//dang nhapdang ky
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
-openModalLink.addEventListener('click', function (e) {
-        e.preventDefault(); // Ngăn chuyển hướng khi nhấn vào liên kết
-modal.style.display = 'block'; // Hiển thị modal
+signUpButton.addEventListener('click', () => {
+    container.classList.add('right-panel-active');
 });
 
-closeModalBtn.addEventListener('click', function () {
-    modal.style.display = 'none'; // Đóng modal
+signInButton.addEventListener('click', () => {
+    container.classList.remove('right-panel-active');
 });
