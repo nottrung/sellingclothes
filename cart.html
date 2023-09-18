@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Contact</title>
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
@@ -14,6 +14,121 @@
 
     <body>
 
+        <section id = "header"> 
+            <a href="index.html"> <img src="img/logo4.png" alt=""> </a>
+            <div>
+                <ul id = "navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="lg_bag"><a class="active"  href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                    <div class="dropdown">
+                        <li><a><i class="far fa-regular fa-user"></i></a></li>
+                        <div class="dropdown-content">
+                            <a href="Account.html">view profile</a>
+                            <a href="login.html">log out</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Name Product</td>
+                        <td>Quantity</td>
+                        <td>Price</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle" style="color: red; font-size: 20px;"></i></a></td>
+                        <td><img src="img/products/f1.jpg" alt=""></td>
+                        <td>tensp jj do</td>
+                        <td><input type="number" name="" id="" value="1"></td>
+                        <td>$999</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    <section id="cart-add"  class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="nomal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$999</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$999</td>
+                </tr>
+            </table>
+            <button class="nomal">Thanh Toán</button>
+        </div>
+    </section>
+
+        <footer class="section-p1"> 
+            <div class="col">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong> P. Nguyễn Trác, Yên Nghĩa, Hà Đông, Hà Nội</p>
+                <p><strong>Hours: </strong> 9:00 am - 22:00 pm, Mon - Sun</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                       <a href="https://www.facebook.com/quanghuy010403/"><i class="fab fa-facebook"></i></a>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivey Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <h4>About</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <a href="https://www.apple.com/vn/store"><img src="img/pay/app.jpg" alt=""></a>
+                    <a href="https://play.google.com/store/apps?gl=us"><img src="img/pay/play.jpg" alt=""></a>
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+        </footer>
 
         <script src="script.js"></script>
 

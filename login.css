@@ -5,7 +5,7 @@
 }
 
 body {
-    background: white;
+    background: radial-gradient(ellipse at top, #e66465, transparent),radial-gradient(ellipse at bottom, #4d9f0c, transparent);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,9 +163,7 @@ input {
 }
 
 .overlay {
-    background: #FF416C;
-    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(45deg, #e65adc,#eab329);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -218,31 +216,6 @@ input {
     transform: translateX(20%);
 }
 
-
 .social-container {
     margin: 20px 0;
-}
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
 }

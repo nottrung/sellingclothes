@@ -58,11 +58,12 @@
                         </tr>
                     </table>
                 </div>
-                <a href="#" id="openModalLink">Update Information</a>
+                <a href="#" id="openModalLink" class="openModalLink">Update Information</a>
                 
                 <div class="modal" id="myModal">
+                    
                     <div class="modal-content">
-                        
+                        <a href="" class="rt"><i class="far fa-times-circle"></i></a>
                         <h4>Update information</h4>
                         <table>
                             <tr>
@@ -86,25 +87,21 @@
                                 <td><input type="text" name="odc" id="odc" placeholder="dia chi"></td>
                             </tr>
                         </table>
-                        <button type="button" id="closeModalBtn">Update</button>
+                        <button type="button" class="closeModalBtn" >Update</button>
                     </div>
                 </div>
             </form>
-            <script>
-                // hien thi phan cap nhat thong tin
-                const openModalLink = document.getElementById('openModalLink');
-                const modal = document.getElementById('myModal');
-                const closeModalBtn = document.getElementById('closeModalBtn');
-
-                openModalLink.addEventListener('click', function (e) {
-                    e.preventDefault(); // Ngăn chuyển hướng khi nhấn vào liên kết
-                    modal.style.display = 'block'; // Hiển thị modal
-                });
-
-                closeModalBtn.addEventListener('click', function () {
-                    modal.style.display = 'none'; // Đóng modal
-                });
-            </script>
         </section>
+        <script>
+            // hien thi phan cap nhat thong tin
+            const openModalLink = document.getElementById('openModalLink');
+            const modal = document.getElementById('myModal');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+
+            openModalLink.addEventListener('click', function (e) {
+                e.preventDefault(); // Ngăn chuyển hướng khi nhấn vào liên kết
+                modal.style.display = 'block'; // Hiển thị modal
+            });
+        </script>
     </body>
 </html>
